@@ -95,8 +95,8 @@ gulp.task('create-new-tag', function (done) {
 });
 
 gulp.task('publish', function() {
-  spawn('npm', ['publish', 'dist/@govuk/platform-template'],    {stdio: 'inherit'});
-  spawn('npm', ['publish', 'dist/@govuk/angularjs-components'], {stdio: 'inherit'});
+  spawn('npm', ['publish', 'dist/@govuk/platform-template', '--tag beta'],    {stdio: 'inherit'});
+  spawn('npm', ['publish', 'dist/@govuk/angularjs-components', '--tag beta'], {stdio: 'inherit'});
 });
 
 
