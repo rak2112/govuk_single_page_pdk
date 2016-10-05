@@ -1,0 +1,51 @@
+<h3 class="heading-medium">Collapsible Pane</h3>
+
+<div class="grid-row">
+
+  <div class="column-one-third font-xsmall">
+    The <b>pdk-collapsible</b> component is used for toggling content.
+
+    <h3 class="heading-small mb-m">Configuration</h3>
+
+    <ul class="list font-xxsmall">
+      <li>
+        <code class="code">collapsed</code> <em>(Default: false)</em> <ng-badge></ng-badge>
+        <br>
+        A boolean value for setting the initial collapsed state of the panel.
+      </li>
+      <li>
+        <code class="code">collapse-label</code> <em>(Default: Show)</em>
+        <br>
+        The button text to be displayed when the panel is collapsed.
+      </li>
+      <li>
+        <code class="code">open-label</code> <em>(Default: Hide)</em>
+        <br>
+        The button text to be displayed when the panel is open.
+      </li>
+      <li>
+        <hr>
+        <code class="code">collapse</code>
+        An attribute to be applied to one or more child elements such that they
+        will disappear when the panel is in its collapsed state.
+      </li>
+    </ul>
+  </div>
+
+  <div class="column-two-thirds">
+    <docs-example data-language="markup">
+      <pdk-collapsible>
+
+        <h4 class="heading-medium">This heading is always visible</h4>
+
+        <p collapse>This content will be toggled. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim quis nostrud
+          ullamco laboris nisi ut aliquip ex eaaute irure dolor in invelit.</p>
+
+        <p class="mt-m">This text is always visible.</p>
+
+      </pdk-collapsible>
+    </docs-example>
+  </div>
+</div>
