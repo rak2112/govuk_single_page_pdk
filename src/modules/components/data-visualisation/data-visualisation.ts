@@ -9,7 +9,6 @@ const module = angular.module('govuk-single-page-pdk.components.data-visualisati
 
 import { PersonalDetailsComponent } from './personal-details/personal-details.component';
 import { ContactInfoComponent} from './contact-info/contact-info.component';
-import { SummaryItemComponent} from './summary-item/summary-item.component';
 import { DigitBoxComponent } from './digit-box/digit-box.component';
 import { FiltersComponent } from './filters/filters.component';
 import { TabComponent } from './tab/tab.component';
@@ -22,7 +21,6 @@ import { CaseMarkersComponent } from './case-markers/case-markers.component';
 module
   .component('govPersonalDetails', PersonalDetailsComponent)
   .component('govContactInfo', ContactInfoComponent)
-  .component('govSummaryItem', SummaryItemComponent)
   .component('govDigitBox', DigitBoxComponent)
   .component('govFilters', FiltersComponent)
   .component('govTab', TabComponent)
@@ -36,9 +34,11 @@ module
 
 import { CollapsibleComponent } from './collapsible/collapsible.component';
 import { CollapseDirective } from './collapsible/collapse.directive';
+import { SummaryItemComponent} from './summary-item/summary-item.component';
 
 module
   .component('pdkCollapsible', CollapsibleComponent)
+  .component('pdkSummaryItem', SummaryItemComponent)
   .directive('collapse', CollapseDirective);
 
 export default module.name;
