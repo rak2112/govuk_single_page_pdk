@@ -22,8 +22,8 @@ import { uuid } from '../../../../util/helpers';
                              'collapsibles-toggle-on': $ctrl.collapsed}">
           </i>
           <span class="collapsibles-button-text"
-                data-ng-bind="$ctrl.collapsed ? ($ctrl.collapsedLabel || 'Hide')
-                                              : ($ctrl.openLabel || 'Show')">
+                data-ng-bind="$ctrl.collapsed ? ($ctrl.collapsedLabel || 'Show')
+                                              : ($ctrl.openLabel || 'Hide')">
           </span>
         </button>    
       </div>

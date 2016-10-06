@@ -12,13 +12,13 @@ import { SideMenuDemo } from './menus/side-menu/side-menu.demo';
 import { StartBarDemo } from './start-bar/start-bar.demo';
 import { TopMenuDemo } from './menus/global-navigation/top-menu.demo';
 
-import { ActionDemo } from './actions/actions.demo';
+import { ActionDocs } from './actions/actions.docs';
 
 const module = angular.module('govuk-single-page-pdk.component-demos.navigation', [
   navigation,
   docsUtils
 ])
-  .component('pdkActionDemo', ActionDemo)
+  .component('actionDocs', ActionDocs)
 
   .component('govActionPaneDemo', ActionPaneDemo)
   .component('govBadgeItemDemo', BadgeItemDemo)

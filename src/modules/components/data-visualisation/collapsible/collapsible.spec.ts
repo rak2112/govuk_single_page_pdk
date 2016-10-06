@@ -54,9 +54,9 @@ describe('collapsible', () => {
   it('displays the default or defined button labels', () => {
     let element;
     element = compile(`<pdk-collapsible></pdk-collapsible>`);
-    expect(element.find('button')).toContainText('Show');
-    element.find('button').click();
     expect(element.find('button')).toContainText('Hide');
+    element.find('button').click();
+    expect(element.find('button')).toContainText('Show');
     element = compile(`
       <pdk-collapsible open-label="Foo" collapsed-label="Bar"></pdk-collapsible>
     `);

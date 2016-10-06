@@ -11,7 +11,17 @@ import { TopMenuComponent} from './menus/global-navigation/top-menu.component';
 import { StartBarComponent} from './start-bar/start-bar.component';
 import { ActionBarSecondaryStyle } from './start-bar/action-bar-secondary-style.directive';
 
+import { ActionComponent } from './actions/action.component';
+import { ActionCompleteComponent } from './actions/action-complete.component';
+import { ActionDetailsComponent } from './actions/action-details.component';
+import { ActionStartComponent } from './actions/action-start.component';
+
 const module = angular.module('govuk-single-page-pdk.components.navigation', [])
+
+  .component('pdkAction', ActionComponent)
+  .component('pdkActionComplete', ActionCompleteComponent)
+  .component('pdkActionDetails', ActionDetailsComponent)
+  .component('pdkActionStart', ActionStartComponent)
 
   .component('govActionPane', ActionPaneComponent)
   .component('govArrow', ArrowComponent)

@@ -25,6 +25,7 @@ $module: 'action-bar';
   &-start {
     border: 1px solid $panel-colour;
     border-bottom: 3px solid $panel-colour;
+    margin: em(5) 0;
 
     .#{$module}-header {
       background-color: $white;
@@ -62,7 +63,6 @@ $module: 'action-bar';
           background-image: file-url('actionbar-arrow-2x.png');
           background-size: 100%;
         }
-
       }
     }
 
@@ -70,7 +70,8 @@ $module: 'action-bar';
 
   // completed
   &-completed {
-    padding: 0 em(10) em(10);
+    margin: em(15) 0;
+    padding: 0 em(10);
 
     .#{$module}-header {
       display: table;
